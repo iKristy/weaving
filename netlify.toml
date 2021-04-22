@@ -7,3 +7,14 @@
 
 [context.deploy-preview]
   command = "yarn build-preview"
+
+[[plugins]]
+package = "netlify-plugin-rss"
+  [plugins.inputs]
+  # required configs, customize as needed
+  dirToScan = "/" # a subfolder to scan. "/" to scan all
+  authorName = "kuka"
+  site_url = "/"
+  title = "RSS Feed"
+  rssDescription = "RSS Feed"
+  categories = ['Technology', 'JAMstack', 'Web Development']
